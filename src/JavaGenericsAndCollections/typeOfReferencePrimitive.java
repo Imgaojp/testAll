@@ -13,13 +13,18 @@ public class typeOfReferencePrimitive {
         assert sumInteger(bigs) == sum(bigs);
         assert sumInteger(bigs) != sumInteger(bigs);
         assert sumInteger(bigs).equals(sumInteger(bigs));
+        List<Integer> smalls = Arrays.asList(1, 2, 3);
+        assert sumInteger(smalls) == sum(smalls);
+        assert sumInteger(smalls) == sumInteger(smalls);
+//        assert sumInteger(smalls) != sumInteger(smalls); 不成立因为cache机制。而且-ea打开assert，默认不打开。
+        assert sumInteger(smalls).equals(sumInteger(smalls));
         System.out.println("OK");
     }
 
     static Integer sumInteger(List<Integer> ints) {
         Integer s = 0;
-        for (Integer n:ints
-             ) {
+        for (Integer n : ints
+                ) {
             s += n;
         }
         return s;
