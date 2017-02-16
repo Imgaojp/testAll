@@ -21,5 +21,7 @@ public class subTypeTest {
         String sin = in.readLine();
         ints.add(sin);
         System.out.println(ints);
+        List<Integer> collection = ints;
+        System.out.println(collection);
     }
 }

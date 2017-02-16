@@ -14,6 +14,10 @@ public class listsTest {
                     ) {
                 lists.add(elt);
             }
+            String A="asdfasdd";
+            A=A+"asdf";
+            System.out.println(A);
+            int b=4;
             return lists;
         }
 }

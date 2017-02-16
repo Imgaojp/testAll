@@ -1,5 +1,7 @@
 package JavaGenericsAndCollections;
 
+import com.sun.xml.internal.bind.v2.TODO;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +22,6 @@ public class typeOfReferencePrimitive {
         assert sumInteger(smalls).equals(sumInteger(smalls));
         System.out.println("OK");
     }
-
     static Integer sumInteger(List<Integer> ints) {
         Integer s = 0;
         for (Integer n : ints
